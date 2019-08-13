@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563664360131.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "655325676",
+    "id" : "6EE0AEB5",
+    "lastKnownWriteTime" : 1563663948,
+    "last_content_update" : 1563663948,
+    "path" : "~/github/RFDistribution/rfdistr/R/RF_old.R",
+    "project_path" : "R/RF_old.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

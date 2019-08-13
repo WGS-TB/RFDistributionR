@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563664545770.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1730029773",
+    "id" : "C5C7EF25",
+    "lastKnownWriteTime" : 1563663948,
+    "last_content_update" : 1563663948,
+    "path" : "~/github/RFDistribution/rfdistr/R/RF_NTTfromPy.R",
+    "project_path" : "R/RF_NTTfromPy.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

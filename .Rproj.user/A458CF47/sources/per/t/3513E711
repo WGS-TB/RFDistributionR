@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563664546345.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3365793907",
+    "id" : "3513E711",
+    "lastKnownWriteTime" : 1563663948,
+    "last_content_update" : 1563663948,
+    "path" : "~/github/RFDistribution/rfdistr/R/RF_FFT.R",
+    "project_path" : "R/RF_FFT.R",
+    "properties" : {
+        "cursorPosition" : "17,31",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
