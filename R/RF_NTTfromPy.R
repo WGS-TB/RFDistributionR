@@ -110,20 +110,21 @@ ntt_RF_Convolve=function(tree,n){
       }
 
       #write(L,"testNTT.txt",ncolumns=L,append = TRUE)
-      write(R1aug,"testNTT.txt",ncolumns=L,append = TRUE)
-      write(R2aug,"testNTT.txt",ncolumns=L,append = TRUE)
+      write(R1aug,"~/testNTT.txt",ncolumns=L,append = TRUE)
+      write(R2aug,"~/testNTT.txt",ncolumns=L,append = TRUE)
 
       #read the output of Python
 
       system('python  ntt_fromR.py')
 
-      U=as.matrix(read.csv("outNTT.txt",header = FALSE, quote=""))
+      U=as.matrix(read.csv("~/outNTT.txt",header = FALSE, quote=""))
 
       Matc=ceiling(length(R1aug)/(3*nrow(R1)))
       sum3=matrix(c(U,numeric(Matc*3*nrow(R1)-length(R1aug))),nrow=3*nrow(R1))[1:nrow(R1),1:ncol(R1)]
       sum3=cbind(array(0, dim=c(nrow(R1)-1,1)),sum3[2:nrow(R1),])
       R[[v]][2:(ntip-1),2:(ntip-1)]=sum1+sum2+sum3
-      file.remove("testNTT.txt")
+      file.remove("~/testNTT.txt")
+      file.remove("~/outNTT.txt")
 
     }
   }
