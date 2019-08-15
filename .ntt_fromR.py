@@ -1,4 +1,4 @@
-from rfdist import ntt
+from rfdist.rfdist import ntt
 import json
 import time
 
