@@ -1,4 +1,4 @@
-import ntt
+from rfdist import ntt
 import json
 import time
 

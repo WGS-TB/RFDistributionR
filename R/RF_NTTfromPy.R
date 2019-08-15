@@ -5,6 +5,7 @@ library("phangorn")
 library("readtext")
 options("digits"=22)
 options("scipen"=100)
+
 #Beta function
 Beta=function(m){
   if(m<=0){ans=1}
@@ -113,9 +114,27 @@ ntt_RF_Convolve=function(tree,n){
       write(R1aug,"~/testNTT.txt",ncolumns=L,append = TRUE)
       write(R2aug,"~/testNTT.txt",ncolumns=L,append = TRUE)
 
-      #read the output of Python
+      #If python script is changed, increment this number.
+      python_ntt_version <- 1
 
-      system('python  ntt_fromR.py')
+      #read the output of Python
+      current_filename <- paste(".ntt_fromR",paste0(python_ntt_version),".py", sep = "")
+      if(length(which(list.files("~",all.files=TRUE) == current_filename)) == 0){
+	      print("ntt_fromR is old, deleted, or was not installed. Installing .ntt_fromR.")
+	      download.file('https://raw.githubusercontent.com/FrankWhoee/rfdistr/master/.ntt_fromR.py', destfile = paste("~/",current_filename, sep = ""), method="curl")
+	      previous_filename <- paste(".ntt_fromR",paste0(python_ntt_version - 1),".py", sep = "")
+	      if(length(which(list.files("~",all.files=TRUE) == previous_filename)) != 0){
+	        print("Older version of ntt_fromR found, automatically removing")
+          file.remove(paste("~/",previous_filename, sep = ""))
+        }
+      }
+
+      if(length(which(grepl("rfdist",system("pip list", intern = TRUE)) == TRUE)) == 0){
+	      print("pip package rfdist was deleted or not installed. Installing rfdist.")
+        system('pip install rfdist')
+      }
+      system(paste('python ~/',current_filename, sep = ""))
+
 
       U=as.matrix(read.csv("~/outNTT.txt",header = FALSE, quote=""))
 
