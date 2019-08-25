@@ -11,6 +11,6 @@ To install the R package, open a terminal and type:<br><br>
 `R`<br>
 `install.packages("devtools")`<br>
 `library("devtools")`<br>
-`install_github("frankwhoee/rfdistr")`<br>
+`install_github("WGS-TB/RFDistributionR")`<br>
 
 If you are interested in the Python version instead, please visit https://github.com/WGS-TB/RFDistribution.
