@@ -23,11 +23,6 @@ library("ape")
 rfdistr::ntt_polynomial(rtree(5),6)
 ```
 
-```
-library("rfdistr")
-library("ape")
-rfdistr::fft_polynomial(rtree(5),6)
-```
 
 ```
 library("rfdistr")
