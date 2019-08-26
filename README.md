@@ -7,10 +7,31 @@ Given an unrooted phylogenetic tree T with l tips, the procedure for computing t
 Denote the node adjacent to tip l in T by v_0. Remove tip l, and root the resulting tree with v_0 as the root. We use this 
 rooted tree as the input to the dynamic programming algorithm.
 
+## Installation
+
 To install the R package, open a terminal and type:<br><br>
 `R`<br>
 `install.packages("devtools")`<br>
 `library("devtools")`<br>
 `install_github("WGS-TB/RFDistributionR")`<br>
 
+## Usage Examples
+
+```
+library("rfdistr")
+library("ape")
+rfdistr::ntt_polynomial(rtree(5),6)
+```
+
+```
+library("rfdistr")
+library("ape")
+rfdistr::fft_polynomial(rtree(5),6)
+```
+
+```
+library("rfdistr")
+library("ape")
+rfdistr::polynomial(rtree(5),6)
+```
 If you are interested in the Python version instead, please visit https://github.com/WGS-TB/RFDistribution.
