@@ -10,6 +10,7 @@ rooted tree as the input to the dynamic programming algorithm.
 ## Installation
 
 To install the R package, open a terminal and type:<br><br>
+`sudo apt-get install libcurl4-openssl-dev libxml2-dev`<br>
 `R`<br>
 `install.packages("devtools")`<br>
 `library("devtools")`<br>
