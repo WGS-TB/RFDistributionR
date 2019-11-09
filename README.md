@@ -11,7 +11,7 @@ rooted tree as the input to the dynamic programming algorithm.
 
 To install the R package, open a terminal and type:<br><br>
 ```
-sudo add-apt-repository -y ppa:opencpu/poppler
+sudo add-apt-repository -y ppa:cran/poppler
 sudo apt-get update
 sudo apt-get install -y libpoppler-cpp-dev
 sudo apt-get install libcurl4-openssl-dev libxml2-dev
